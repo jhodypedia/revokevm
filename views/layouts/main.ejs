@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title><%= title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.2/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Revoke<span>Guard</span></div>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="https://chainlist.org" target="_blank" rel="noopener">Chainlist</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <%- body %>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Semua transaksi ditandatangani di wallet Anda. Kami tidak menyimpan private key.</small>
+    </div>
+  </footer>
+</body>
+</html>
